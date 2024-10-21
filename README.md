@@ -1,6 +1,6 @@
 # Descriere Task-urilor
 
-	In aceasta tema am avut de simulat functionarea unei statii de incarcare pentru vehicule electrice, folosind multiple LED-uri si butoane.
+In aceasta tema am avut de simulat functionarea unei statii de incarcare pentru vehicule electrice, folosind multiple LED-uri si butoane.
 	
 # Descriere generala a functionarii:
 
