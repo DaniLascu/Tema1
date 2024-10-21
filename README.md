@@ -4,10 +4,8 @@
 	
 ## Descriere generala a functionarii:
 
-	Initial statia de incarcare este libera. LED-urile din loader sunt stinse, iar LED-ul RGB are culoarea verde, ceea ce reprezinta
-disponibilitatea de a incepe incarcarea.
-	La apasarea scurta a butonului de start, LED-ul RGB isi schimba culoarea in rosu, pentru a arata ca statia este ocupata. Tot atunci 
-incepe functia de incarcare, care utilizeaza LED-urile albastre. Se aprinde intai LED1, care clipeste 3 secunde, reprezentand 25% din procesul de incarcare. LED1 ramane aprins, iar apoi pentru alte 3 secunde, pana la 50% din incarcare LED2 clipeste. Intre 50% si 75% din incarcare LED3 clipeste, iar LED1 si LED2 raman aprinse, iar intre 75% si 100% din incarcare LED1, LED2 si LED3 sunt aprinse, iar LED4 clipeste.
+	Initial statia de incarcare este libera. LED-urile din loader sunt stinse, iar LED-ul RGB are culoarea verde, ceea ce reprezinta disponibilitatea de a  incepe incarcarea.
+	La apasarea scurta a butonului de start, LED-ul RGB isi schimba culoarea in rosu, pentru a arata ca statia este ocupata. Tot atunci incepe functia de incarcare, care utilizeaza LED-urile albastre. Se aprinde intai LED1, care clipeste 3 secunde, reprezentand 25% din procesul de incarcare. LED1 ramane aprins, iar apoi pentru alte 3 secunde, pana la 50% din incarcare LED2 clipeste. Intre 50% si 75% din incarcare LED3 clipeste, iar LED1 si LED2 raman aprinse, iar intre 75% si 100% din incarcare LED1, LED2 si LED3 sunt aprinse, iar LED4 clipeste.
 	La sfarsitul procesului de incarcare, toate cele 4 LED-uri clipesc de 3 ori, dupa care se sting. LED-ul RGB devine verde pentru a 
 arata ca statia este din nou libera.
 	Daca butonul de start este apasat oricand in timpul incarcarii, nu se intampla nimic.
