@@ -48,3 +48,6 @@ Pentru a se asigura că actiunile declansate de butoane sunt corecte si nu sunt 
 
 # Schema electrica TinkerCad
 ![schema_tinkercad](https://github.com/user-attachments/assets/c0e39f97-02e3-4622-9aa2-34416d50f171)
+
+# Video cu functionalitatea
+https://www.youtube.com/watch?v=Qc8gGveFLoo
