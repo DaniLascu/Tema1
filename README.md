@@ -37,3 +37,11 @@ Pentru a se asigura că actiunile declansate de butoane sunt corecte si nu sunt 
  - 8x Rezistoare (6x 220, 2x 1K)
  - Breadboard
  - Linii de legătură
+
+# Poze ale setup-ului fizic
+![poza_setup_2](https://github.com/user-attachments/assets/3a3d6931-59b8-4fee-aa75-a44948ff3e77)
+![poza_setup_1](https://github.com/user-attachments/assets/5ec678cd-fb56-42bd-9b5e-b28ee321a0d5)
+![poza_setup_6](https://github.com/user-attachments/assets/917a6ab5-f13b-483f-b94d-045055128744)
+![poza_setup_5](https://github.com/user-attachments/assets/921f99fd-1d55-457b-b43b-5221f2ed5c69)
+![poza_setup_4](https://github.com/user-attachments/assets/8a108dc2-4182-4fce-a846-76a28fa33420)
+![poza_setup_3](https://github.com/user-attachments/assets/b1985132-59a1-4b42-8be5-9626fe936624)
