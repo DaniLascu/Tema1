@@ -182,7 +182,7 @@ void charge_func(){
     }
     else if((millis() - load) >= led4_timer && (current_time - last_toggle) > toggle_slow_interval){//cand se termina incarcarea toate led-urile
       led1_state = !led1_state;                                                    //clipesc de 3 ori
-      digitalWrite(led1, led1_state);
+      digitalWrite(led1, led1_state);                                              //incarcarea se termina cand millis() - load >= led4_timer 
       led2_state = !led2_state;
       digitalWrite(led2, led2_state);
       led3_state = !led3_state;
