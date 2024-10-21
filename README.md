@@ -2,7 +2,7 @@
 
 	In aceasta tema am avut de simulat functionarea unei statii de incarcare pentru vehicule electrice, folosind multiple LED-uri si butoane.
 	
-## Descriere generala a functionarii:
+# Descriere generala a functionarii:
 
 	Initial statia de incarcare este libera. LED-urile din loader sunt stinse, iar LED-ul RGB are culoarea verde, ceea ce reprezinta disponibilitatea de a  incepe incarcarea.
 	La apasarea scurta a butonului de start, LED-ul RGB isi schimba culoarea in rosu, pentru a arata ca statia este ocupata. Tot atunci incepe functia de incarcare, care utilizeaza LED-urile albastre. Se aprinde intai LED1, care clipeste 3 secunde, reprezentand 25% din procesul de incarcare. LED1 ramane aprins, iar apoi pentru alte 3 secunde, pana la 50% din incarcare LED2 clipeste. Intre 50% si 75% din incarcare LED3 clipeste, iar LED1 si LED2 raman aprinse, iar intre 75% si 100% din incarcare LED1, LED2 si LED3 sunt aprinse, iar LED4 clipeste.
@@ -12,7 +12,7 @@ arata ca statia este din nou libera.
 	Daca butonul de end este apasat lung (mai mult de 1 secunda) in timpul incarcarii, atunci cele 4 LED-uri ale loader-ului vor clipii
 de 3 ori, dupa care se vor stinge, iar LED-ul RGB se va face verde.
 
-## Organizarea Task-urilor:
+# Organizarea Task-urilor:
 	Task 1: Starea statiei – Disponibilitate si Indicatori
 	In primul task, trebuie sa gestionam indicatorul de stare al statiei de incarcare, reprezentat de un LED RGB. Acesta va semnaliza 	daca statia este disponibila sau ocupata. Cand statia este libera, LED-ul va lumina in verde, iar cand statia este utilizata 	pentru incarcare, se va schimba in rosu. Prin aceasta abordare, putem identifica vizual starea statiei în orice	moment.
 
