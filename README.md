@@ -28,7 +28,7 @@ Unul dintre butoanele disponibile are rolul de a porni procesul de incarcare. Du
 Al doilea buton are functia de oprire si resetare a procesului de incarcare. Daca acesta este apasat si mentinut timp de cel putin 	1 secunda in timpul procesului de incarcare, statia va opri imediat procesul si va reveni la starea initiala de disponibilitate, 	cu LED-ul RGB schimbându-se din nou în verde. De asemenea, va rula o animatie in care toate LED-urile clipesc de 3 ori pentru a 	indica oprirea.
 
 ## Task 5: Debouncing-ul butoanelor
-Pentru a se asigura că actiunile declansate de butoane sunt corecte si nu sunt afectate de eventuale interferente electrice sau 	zgomote, este necesar sa se implementeze un mecanism de debouncing. Acesta asigura ca fiecare apasare de buton este inregistrata 	in mod corect, evitand inregistrarea multipla a unei singure apasari. Solutia implementata utilizeaza tehnici de debouncing 	software, ceea ce inseamna ca se introduce o logică suplimentara în cod pentru a filtra semnalele instabile de la butoane.
+Pentru a se asigura că actiunile declansate de butoane sunt corecte si nu sunt afectate de eventuale interferente electrice sau 	zgomote, este necesar sa se implementeze un mecanism de debouncing. Acesta asigura ca fiecare apasare de buton este inregistrata 	in mod corect, evitand inregistrarea multipla a unei singure apasari. Solutia implementata utilizeaza tehnici de debouncing 	software, ceea ce inseamna ca se introduce o logica suplimentara în cod pentru a filtra semnalele instabile de la butoane.
 	
 # Componente utilizate
  - 4x LED-uri (pentru a simula procentul de încărcare)
