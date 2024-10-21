@@ -30,11 +30,11 @@ int last_end_btn_state = HIGH;
 // the last time the output pin was toggled
 //variabile folosite la debouncing
 unsigned long last_debounce_time = 0;  
-unsigned long debounce_delay = 50;
+const unsigned long debounce_delay = 50;
 
 // Variabile pentru detectarea apasarii lungi a butonului END
 unsigned long button_press_time = 0;
-unsigned long long_press_duration = 1000; // Apasare lunga de 1 secunda
+const unsigned long long_press_duration = 1000; // Apasare lunga de 1 secunda
 
 //variabile on verifica daca incarcarea merge
 //daca on == 0 atunci inseamna ca statie de incarcare e goala
@@ -43,10 +43,14 @@ int on = 0;
 
 //variabile ce mentin cronometrul incarcarii
 unsigned long load = 0;
-unsigned long led1_timer = 3000;//cat timp trebuie sa clipeasca led1
-unsigned long led2_timer = 6000;//pana cand trebuie sa clipeasca led2
-unsigned long led3_timer = 9000;//pana cand trebuie sa clipeasca led3
-unsigned long led4_timer = 12000;//pana cand trebuie sa clipeasca led4
+const unsigned long led1_timer = 3000;//cat timp trebuie sa clipeasca led1
+const unsigned long led2_timer = 6000;//pana cand trebuie sa clipeasca led2
+const unsigned long led3_timer = 9000;//pana cand trebuie sa clipeasca led3
+const unsigned long led4_timer = 12000;//pana cand trebuie sa clipeasca led4
+
+const unsigned long total_charge_duration = 15000; //durata incarcarii in ms
+const unsigned long animation_duration = 3000; //durata animatiei de incheiere
+const unsigned long toggle_slow_interval = 500; //interval de toggle animatie de sfarsit
 
 void setup()
 {
@@ -100,9 +104,9 @@ bool charge_end(){
 void charge_func(){
   load = millis(); //retine momentul de inceput al incarcarii
   unsigned long last_toggle = 0;//momentul in care s-a facut ultima data toggle
-  unsigned long toggle_interval = 400;  //frecventa cu care clipesc led-urile
+  const unsigned long toggle_interval = 400;  //frecventa cu care clipesc led-urile
   
-  while(millis() - load <= 15000){
+  while(millis() - load <= total_charge_duration){
     
     unsigned long current_time = millis(); //masoara timpul curent pt a verifica cand sa faca toggle
     
@@ -124,9 +128,9 @@ void charge_func(){
       digitalWrite(led3, led3_state);
       digitalWrite(led4, led4_state);
       
-      while((millis() - animation_timer) <= 3000){
+      while((millis() - animation_timer) <= animation_duration){
         current_time = millis();//iau timpul curent pt a verifica cand sa fac toggle
-        if(current_time - last_toggle > 500){  //led-urile trebuie sa clipeasca de 3 ori
+        if(current_time - last_toggle > toggle_slow_interval){  //led-urile trebuie sa clipeasca de 3 ori
          	led1_state = !led1_state;
             digitalWrite(led1, led1_state);
             led2_state = !led2_state;
@@ -176,7 +180,7 @@ void charge_func(){
       digitalWrite(led4, led4_state);
       last_toggle = current_time;
     }
-    else if((millis() - load) >= led4_timer && (current_time - last_toggle) > 500){//cand se termina incarcarea toate led-urile
+    else if((millis() - load) >= led4_timer && (current_time - last_toggle) > toggle_slow_interval){//cand se termina incarcarea toate led-urile
       led1_state = !led1_state;                                                    //clipesc de 3 ori
       digitalWrite(led1, led1_state);
       led2_state = !led2_state;
