@@ -149,7 +149,7 @@ void charge_func(){
     //verific cat timp a trecut de la apelarea functiei, i.e. inceperea incarcarii, prin millis() - load
 
     if((millis() - load) < led1_timer && (current_time - last_toggle) > toggle_interval){
-      led1_state = !led1_state; //daca a trecut 25% din timp led1 face toggle, restul sunt stinse
+      led1_state = !led1_state; //daca a trecut mai putin de 25% din timp led1 face toggle, restul sunt stinse
       digitalWrite(led1, led1_state);
       last_toggle = current_time;
     }
