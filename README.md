@@ -45,3 +45,6 @@ Pentru a se asigura că actiunile declansate de butoane sunt corecte si nu sunt 
 ![poza_setup_5](https://github.com/user-attachments/assets/921f99fd-1d55-457b-b43b-5221f2ed5c69)
 ![poza_setup_4](https://github.com/user-attachments/assets/8a108dc2-4182-4fce-a846-76a28fa33420)
 ![poza_setup_3](https://github.com/user-attachments/assets/b1985132-59a1-4b42-8be5-9626fe936624)
+
+# Schema electrica TinkerCad
+![schema_tinkercad](https://github.com/user-attachments/assets/c0e39f97-02e3-4622-9aa2-34416d50f171)
