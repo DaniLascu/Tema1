@@ -30,3 +30,10 @@ Al doilea buton are functia de oprire si resetare a procesului de incarcare. Dac
 ## Task 5: Debouncing-ul butoanelor
 Pentru a se asigura că actiunile declansate de butoane sunt corecte si nu sunt afectate de eventuale interferente electrice sau 	zgomote, este necesar sa se implementeze un mecanism de debouncing. Acesta asigura ca fiecare apasare de buton este inregistrata 	in mod corect, evitand inregistrarea multipla a unei singure apasari. Solutia implementata utilizeaza tehnici de debouncing 	software, ceea ce inseamna ca se introduce o logică suplimentara în cod pentru a filtra semnalele instabile de la butoane.
 	
+# Componente utilizate
+ - 4x LED-uri (pentru a simula procentul de încărcare)
+ - 1x LED RGB (pentru starea de liber sau ocupat)
+ - 2x Butoane (pentru start încărcare și stop încărcare)
+ - 8x Rezistoare (6x 220, 2x 1K)
+ - Breadboard
+ - Linii de legătură
